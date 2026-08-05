@@ -1,0 +1,45 @@
+.filmInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.imageContainer {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+  }
+}
+
+.contentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttonArea {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  button {
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  button:hover {
+    background-color: brown;
+    color: white;
+  }
+}

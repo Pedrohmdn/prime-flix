@@ -1,0 +1,23 @@
+header {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  padding: 0 24px;
+  margin-bottom: 60px;
+
+  .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .favoritos {
+    color: black;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+}
