@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
-
-//movie/now_playing?api_key=7a8b8b6a066327503de5bb61de41df8c&language=pt-BR
+import { apiKey } from "../../services/apiKey";
 
 export default function Home() {
   const [filmes, setFilmes] = useState([]);
@@ -13,7 +12,7 @@ export default function Home() {
     async function loadFilms() {
       const response = await api.get("movie/now_playing", {
         params: {
-          api_key: "7a8b8b6a066327503de5bb61de41df8c",
+          api_key: apiKey,
           language: "pt-BR",
           page: 1,
         },

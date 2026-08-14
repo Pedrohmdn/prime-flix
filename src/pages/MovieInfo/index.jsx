@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 
 import api from "../../services/api";
 import styles from "./MovieInfo.module.css";
+import { apiKey } from "../../services/apiKey";
 
 export default function MovieInfo() {
   const { id } = useParams();
@@ -18,7 +19,7 @@ export default function MovieInfo() {
       const response = await api
         .get(`/movie/${id}`, {
           params: {
-            api_key: "7a8b8b6a066327503de5bb61de41df8c",
+            api_key: apiKey,
             language: "pt-BR",
           },
         })
